@@ -1,6 +1,6 @@
 {
   "name": "vusic",
-  "homepage": "http://vusic.techstore.dev/",
+  "homepage": "https://safanone8.github.io/Vusic-a-music-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "@testing-library/user-event": "7.1.2",
     "axios": "0.27.2",
     "dotenv": "8.2.0",
+    "gh-pages": "^6.1.1",
     "grade-js": "1.0.10",
     "react": "16.13.1",
     "react-dom": "16.13.1",
@@ -27,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
